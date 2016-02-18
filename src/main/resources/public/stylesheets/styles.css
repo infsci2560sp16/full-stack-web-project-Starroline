@@ -1,0 +1,322 @@
+#header {
+    background-color:black;
+    color:gold;
+    text-align:left;
+    padding:20px;
+}
+
+.main-search__content {
+    padding:0px 0px 0px 200px
+}
+
+.main-search__input {
+    border-radius:4px;
+    background:#FFF;
+    border:1px solid #D4D4D4;
+    font-size:13px;
+    padding:7px 5px 7px 5px;
+    vertical-align:middle;
+    width:260px
+}
+
+.main-search__button {
+    background-color: gold; 
+    border: none;
+    color: white;   
+    border-radius: 4px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.main-search__button:hover {
+    background-color: gray;
+}
+
+table {
+    border: none;
+}
+
+td1 {
+    background: gold;
+    border-radius:4px;
+    font-size: 12px;
+    padding: 5px;30px;5px;30px;
+    margin-left: 50px;
+}
+
+td2 {
+    background: gold;
+    border-radius:4px;
+    font-size: 12px;
+    padding: 5px;20px;5px;20px;
+    margin-left: 10px;
+}
+
+.account {
+    padding: 0px 0px 0px 555px;
+    float: left;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    padding: -15px 5px -15px 0px;
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    color:black;
+}
+
+label {
+    color:black;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.nav {
+    text-align:center;
+    line-height:10px;
+    background-color:#eeeeee;
+    height:470px;
+    width:220px;
+    float:left;
+    padding:5px;	      
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0px 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: gold;
+    color: white;
+}
+
+#section {
+    width:900px;
+    float:left;
+    padding:10px;
+    margin-left: 30px;	 
+    margin-bottom: 30px;	 
+}
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    margin-right: 20px;
+}   
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#regis-login-button {
+    width: 100px;
+    text-align:center;
+    background-color: gold;
+    font-size:18px;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#regis-login-button:hover {
+    background-color: gray;
+}
+
+.regis-login {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    width:300px;
+    margin-left: 170px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#loginbackground {
+    background-image: url("images/bgpicture.jpg");
+    width:900px;
+    float:left;
+}
+
+.hdr { 
+    width:461px; 
+    height:94px; 
+    margin:10px auto; 
+    text-indent:-9999px;
+}
+
+.list{ 
+    list-style:none; 
+    margin:0; 
+    padding:0;
+}
+
+.sliderBox{ 
+    background:#FFF; 
+    border:solid 1px gold; 
+    width:960px; 
+    border-radius:10px; 
+    overflow:hidden; 
+    position:relative; 
+    padding-bottom:15px; 
+    margin:auto;
+}
+
+.sliderBox h2{ 
+    text-align:center; 
+    line-height:2.5em; 
+    font-size:1.2em; 
+    color:black; 
+    margin:0; 
+    border-radius:10px 10px 0 0;
+    background:gold;
+}
+
+.slider{ 
+    padding:20px 0 10px; 
+    width:830px; 
+    height:120px; 
+    overflow:hidden; 
+    margin:auto; 
+    position:relative;
+}
+
+.slider ul{ 
+    overflow:hidden; 
+    width:1992px; 
+    position:absolute; 
+    left:0;
+}
+
+.slider li{ 
+    float:left; 
+    margin:0 10px; 
+    text-align:center;
+}
+
+.slider a{ 
+    display:inline-block; 
+    width:140px; 
+    height:90px; 
+    padding:2px; 
+    overflow:hidden; 
+    border:solid 1px #CCC; 
+    margin-bottom:5px;
+}
+    
+.slider a:hover{ 
+    border-color:gold;
+}
+
+.status{ 
+    text-align:center; 
+    margin-top:5px; 
+    position:relative\9; 
+}
+    
+.status li{ 
+    cursor:pointer; 
+    background:#FFF; 
+    display:inline-block; 
+    text-indent:-9999px; 
+    border:2px solid #CCC; 
+    width:8px; 
+    height:8px; 
+    border-radius:100%; 
+    margin:0 5px; 
+}
+
+.status li.now{ 
+    background:gold; 
+    border-color:#999;
+}
+
+.dIcon{ 
+    text-indent:-9999px; 
+    position:absolute; 
+    top:90px; 
+    display:block; 
+    width:20px; 
+    height:20px; 
+    background:url(images/all.png) 
+    no-repeat; 
+    width:38px; 
+    height:47px;
+}
+
+.next{ 
+    right:10px; 
+    background-position:-44px -2px;
+}
+    
+.prev{ 
+    left:10px; 
+    background-position:0 -2px;
+}
+   
+.next:hover{ 
+    background-position:-44px -55px;
+}
+    
+.prev:hover{ 
+    background-position:0 -55px;
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:10px;	 	 
+}
