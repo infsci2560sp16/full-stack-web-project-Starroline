@@ -11,12 +11,12 @@ import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
 import static spark.Spark.get;
 
-import static javax.measure.unit.SI.KILOGRAM;
-import javax.measure.quantity.Mass;
-import org.jscience.physics.model.RelativisticModel;
-import org.jscience.physics.amount.Amount;
-
 import com.heroku.sdk.jdbc.DatabaseUrl;
+
+//import static javax.measure.unit.SI.KILOGRAM;
+//import javax.measure.quantity.Mass;
+//import org.jscience.physics.model.RelativisticModel;
+//import org.jscience.physics.amount.Amount;
 
 public class Main {
 
@@ -24,22 +24,28 @@ public class Main {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
+      
+//      get("/hello", (req, res) -> {
+//          RelativisticModel.select();
+//          Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
+//          return "E=mc^2: 12 GeV = " + m.toString();
+//      });
 
-    get("/hello", (req, res) -> {
-      RelativisticModel.select();
-
-      String energy = System.getenv().get("ENERGY");
-
-      Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
-      return "E=mc^2: " + energy + " = " + m.toString();
-    });
-
-    get("/", (request, response) -> {
-            Map<String, Object> attributes = new HashMap<>();
-            attributes.put("message", "Hello World!");
-
-            return new ModelAndView(attributes, "index.ftl");
-        }, new FreeMarkerEngine());
+//      get("/hello", (req, res) -> {
+//          RelativisticModel.select();
+//          
+//          String energy = System.getenv().get("ENERGY");
+//          
+//          Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
+//          return "E=mc^2: " + energy + " = " + m.toString();
+//      });
+      
+//    get("/", (request, response) -> {
+//            Map<String, Object> attributes = new HashMap<>();
+//            attributes.put("message", "Hello World!");
+//
+//            return new ModelAndView(attributes, "index.ftl");
+//        }, new FreeMarkerEngine());
 
     get("/db", (req, res) -> {
       Connection connection = null;

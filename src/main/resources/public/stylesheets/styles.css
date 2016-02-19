@@ -6,7 +6,8 @@
 }
 
 .main-search__content {
-    padding:0px 0px 0px 200px
+    padding:0px 0px 0px 0px;
+    text-align:center;
 }
 
 .main-search__input {
@@ -38,7 +39,7 @@ table {
     border: none;
 }
 
-td1 {
+#td1 {
     background: gold;
     border-radius:4px;
     font-size: 12px;
@@ -46,7 +47,7 @@ td1 {
     margin-left: 50px;
 }
 
-td2 {
+#td2 {
     background: gold;
     border-radius:4px;
     font-size: 12px;
@@ -62,11 +63,13 @@ td2 {
 
 h1 {
     font-size: 50px;
-    padding: -15px 5px -15px 0px;
+    padding: -15px 5px -15px 30px;
+    margin-left: 30px;
 }
 
 h2 {
     text-align: left;
+    margin-left: 10px;
 }
 
 h3 {
