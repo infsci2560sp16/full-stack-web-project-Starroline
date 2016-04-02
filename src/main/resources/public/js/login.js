@@ -3,7 +3,7 @@ function login(){
 	var username=$("#username").val();
 	var password=$("#password").val();
 	$.get("/login",{"username":username,"password":password},function(data){
-	alert("successfully logged in")
+	alert("successfully logged in");
 	//alert(typeof(data));
 	window.location.href="/myIndex?username="+JSON.parse(data).username;
 
