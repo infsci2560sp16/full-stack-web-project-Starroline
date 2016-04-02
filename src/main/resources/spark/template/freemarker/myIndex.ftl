@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
-	<title>MovieClub</title>
+	<title>${title}</title>
 	<link rel="stylesheet" href="stylesheets/styles.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
 	<script type="text/javascript" src="js/away.js"></script>
-
+	<script type="text/javascript" src="js/search.js"></script>
 </head>
 
 <body>
+
 	<div id="header">
 
-		<h5>Good morning! Today is Wednesday!</h5>
+		<h5>Good ${timePeriod} ${username}! Welcome to MovieClub!</h5>
 
+		<#if dayOfWeek=="Friday"||dayOfWeek=="Saturday"||dayOfWeek=="Sunday">
+			<h5>Enjoy yourself at MovieClub!</h5>
+		<#else>
+			<h5>You can find some fun here!</h5>
+		</#if>
+					
 
-		<h1><a class="logo" href="index.html">MovieClub</a></h1>
-
+		<h1>MovieClub</h1>
 		
 		<div class="center">
 
@@ -26,7 +30,7 @@
 
 				<div class="banner-container">
 					<input class="main-search__input" id="search-box" placeholder="Search..." value="">
-					<input class="main-search__button" id="search-button" type="submit" value="Search">
+					<input class="main-search__button" id="search-button" type="button" value="Search" onclick="search()">
 		
 	 				<a href="register.html" class="account" id="signup" role="button">Sign up</a>
 	 				<a href="login.html" class="account" id="login" role="button">Log in</a>		
@@ -135,7 +139,6 @@
 	<div id="footer">
 	University of Pittsburgh ©pig7
 	</div>
-
+	
 </body>
-
 </html>
