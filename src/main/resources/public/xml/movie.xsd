@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="movie">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="movieName" type="xs:string"/>
+				<xs:element name="director" type="xs:string"/>
+				<xs:element name="producer" type="xs:string"/>
+				<xs:element name="releaseYear" type="xs:int"/>
+				<xs:element name="releaseMonth" type="xs:int"/>
+				<xs:element name="releaseDate" type="xs:int"/>
+				<xs:element name="language" type="xs:string"/>
+				<xs:element name="budget" type="xs:string"/>
+				<xs:element name="boxOffice" type="xs:string"/>
+				<xs:element name="username" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
