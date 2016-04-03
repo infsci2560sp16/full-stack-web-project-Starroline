@@ -1,4 +1,5 @@
 import static spark.Spark.staticFileLocation;
+import static spark.Spark.*;
 
 /**
  * @author gaopingjie
@@ -7,6 +8,8 @@ import static spark.Spark.staticFileLocation;
 public class Main {
 
 	public static void main(String[] args) {
+
+        port(Integer.valueOf(System.getenv("PORT")));
 
 		staticFileLocation("/public");
 		
